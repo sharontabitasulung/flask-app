@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Image</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 100px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNHkY6QqMysc7SLQOB-gHAInczWwR_HjAwCi9A7mhQjA&s');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #fff;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-logo {
+            margin-left: 20px;
+        }
+        .navbar-logo img {
+            height: 40px; /* Sesuaikan dengan tinggi logo */
+            width: auto;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            width: 100%;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .example-images {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .example-images img {
+            max-width: 150px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+            text-align: center; /* Teks di tengah */
+        }
+        .contact-info {
+            text-align: left;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <a href="#" class="navbar-brand">Image Classification</a>
+    </div>
+    <h1>Classification of Ripeness Kepok Banana</h1>
+    <div class="content">
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sharon Tabita Sulung. All rights reserved.</p>
+    </footer>
+</body>
+</html>
